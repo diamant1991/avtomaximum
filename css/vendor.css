@@ -350,6 +350,7 @@ a{
     font-family: 'PFDinTextProRegular';
     margin-left: 30px;
     margin-top: 15px;
+    z-index: 112 !important;
     -webkit-box-shadow: 5px 6px 27px 0px rgba(0, 0, 0, 0.26);
     -moz-box-shadow:    5px 6px 27px 0px rgba(0, 0, 0, 0.26);
     box-shadow:         5px 6px 27px 0px rgba(0, 0, 0, 0.26);

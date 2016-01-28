@@ -121,7 +121,61 @@
 		<!-- nav -->
 	</div>
 	<!-- inner top block -->
-
+	<header class="sticky-header">
+		<div class="container clearfix">
+			<div class="enroll-block">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="enroll-link">
+							<span>Записаться</span>
+						</a>
+					</div>
+				</div>
+				<div class="dropdown-form">
+					<form>
+						<div class="input-block clearfix">
+							<div class="left-block">
+								<label>Ваш телефон</label>
+								<input type="text" placeholder="8(123)456-78-90">
+							</div>
+							<div class="right-block">
+								<label>Желаемый день</label>
+								<div class="datepicker-area clearfix">
+									<input type="text" id="hiddenField2">
+								</div>
+							</div>
+						</div>
+						<div class="input-block">
+							<input type="submit" value="Записаться на осмотр бесплатно" class="send-btn">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="sticky-menu clearfix">
+				<div class="table-block">
+					<div class="block-vertical">
+						<ul class="clearfix">
+							<li>
+								<a href="#">Главная</a>
+								<span>/</span>
+							</li>
+							<li>
+								<a href="#">Услуги автосервиса</a>
+								<span>/</span>
+							</li>
+							<li>
+								<a href="#">Адреса и контакты</a>
+							</li>
+						</ul>
+						<div class="sticky-tel">
+							8 (3822) <b>935-925</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- sticky-header -->
 	<div class="content">
 		<div class="breadcrumb">
 			<div class="container">
@@ -150,7 +204,7 @@
 					</div>
 					<div class="attention-link">
 						<a href="#" class="red-link">скачать полный прайс</a>
-						<a href="#" class="yellow-link">записаться на осмотр автомобиля</a>
+						<a href="#" class="yellow-link enroll-modal-link">записаться на осмотр автомобиля</a>
 					</div>
 					<div class="price-info">
 						<table>
@@ -220,7 +274,7 @@
 					</div>
 					<div class="attention-link">
 						<a href="#" class="red-link">скачать полный прайс</a>
-						<a href="#" class="yellow-link">записаться на осмотр автомобиля</a>
+						<a href="#" class="yellow-link enroll-modal-link">записаться на осмотр автомобиля</a>
 					</div>
 				</div>
 			</div>
@@ -357,7 +411,72 @@
 		</div>
 	</footer>
 
+	<div class="form-mask"></div>
+	<div class="modal enroll-modal">
+		<a href="#" class="close-modal">
+			<img src="images/close.png" height="34" width="32" alt="">
+		</a>
+		<div class="modal-block">
+			<form>
+				<div class="form-title">
+					Записаться <br>на осмотр машины
+				</div>
+				<div class="input-block">
+					<label class="label-input">Выберите удобный день</label>
+					<div class="datepicker-area clearfix">
+						<input type="text" id="hiddenField">
+					</div>
+				</div>
+				<div class="input-block">
+					<label class="label-input">Укажите Ваш телефон:</label>
+					<div class="clearfix">
+						<div class="number-input">
+							<input type="text" value="8" class="number" readonly="">
+						</div>
+						<div class="number-input">
+							<input type="text" placeholder="123">
+						</div>
+						<div class="other">
+							<input type="text" placeholder="456-78-90">
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<label class="label-input">Как к Вам обращаться:</label>
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="input-block input-block-margin">
+					<input type="checkbox" class="checkbox" id="checkbox">
+					<label for="checkbox" class="label-check">Заказать выездной просмотр</label>
+				</div>	
+				<div class="input-block">
+					<input type="submit" value="отправить заявку" class="send-btn">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- enroll modal -->
+	
+	<div class="modal complete open">
+		<div class="modal-block">
+			<div class="title">Спасибо <br>за обращение!</div>
+			<div class="text"><p>Ваше обращение принято и <br> поступило в обработку</p></div>
+			<a href="#" class="close-modal-btn">Закрыть</a>
+		</div>
+	</div>
+
+
+
+
 
 	 <script src="js/vendor.min.js"></script>
+	 <script>
+	 	$("#hiddenField").datepicker({
+      showOn: "button",
+      buttonText: "",
+      dateFormat: 'd MM yy'
+    });
+	 </script>
+	 <script src="js/script.js"></script>
 </body>
 </html>
