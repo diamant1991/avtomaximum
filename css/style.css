@@ -368,7 +368,7 @@ strong {
 
 .main-service-item-block {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 150px;
   margin-left: 5px;
   margin-right: 5px; }
@@ -387,6 +387,8 @@ strong {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
+  .main-service-item-block:last-child .item-img img {
+    margin-top: -90px; }
   .main-service-item-block .item-img {
     width: 150px;
     height: 150px;
@@ -505,6 +507,53 @@ strong {
   width: 462px;
   position: relative;
   margin-left: 20px; }
+  .result-service-item img {
+    max-width: 100%;
+    height: auto; }
+  .result-service-item .prev-item {
+    position: relative;
+    float: left;
+    width: 228px; }
+    .result-service-item .prev-item .prev-item-img,
+    .result-service-item .prev-item .overlay {
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+  .result-service-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(211, 50, 42, 0.64);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+  .result-service-item .after-item {
+    position: relative;
+    float: right;
+    width: 228px; }
+    .result-service-item .after-item .prev-item-img,
+    .result-service-item .after-item .overlay {
+      -webkit-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0; }
+  .result-service-item .prev-item-img {
+    height: 260px;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    background-size: cover; }
+    .result-service-item .prev-item-img:hover .overlay {
+      opacity: 1;
+      visibility: visible; }
+    .result-service-item .prev-item-img:hover .after-text {
+      background: url(../images/after-active.png) no-repeat; }
+    .result-service-item .prev-item-img:hover .before-text {
+      background: url(../images/before-active.png) no-repeat; }
   .result-service-item .before-text {
     position: absolute;
     width: 90px;
@@ -517,7 +566,11 @@ strong {
     color: #fff;
     font-family: "PFDinTextProBold";
     text-transform: uppercase;
-    background: url(../images/before.png) no-repeat; }
+    background: url(../images/before.png) no-repeat;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
   .result-service-item .after-text {
     position: absolute;
     width: 90px;
@@ -530,7 +583,11 @@ strong {
     color: #fff;
     font-family: "PFDinTextProBold";
     text-transform: uppercase;
-    background: url(../images/after.png) no-repeat; }
+    background: url(../images/after.png) no-repeat;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
 
 .call-container {
   border-top: 5px solid #282828;
