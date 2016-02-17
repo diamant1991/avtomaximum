@@ -1290,3 +1290,24 @@ strong {
   float: left;
   width: 150px !important;
   margin-left: 10px; }
+
+.logo__name {
+  text-transform: uppercase;
+  font-family: "PFDinTextProBold";
+  color: #a4a4a4;
+  font-size: 29px; }
+  .logo__name .red {
+    color: #eb2a23; }
+
+.logo__text {
+  font-size: 16px;
+  color: #303030;
+  font-family: "PFDinTextProRegular"; }
+
+.logo__img,
+.logo__seo {
+  display: inline-block;
+  vertical-align: middle; }
+
+.logo__seo {
+  margin-left: 10px; }

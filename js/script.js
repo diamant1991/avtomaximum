@@ -76,3 +76,20 @@ jQuery(function($){
   $(".tel-mask").mask("+8 (999) 999-9999");
   $(".large__input").mask("999-99-99");
 });
+
+$(document).keyup(function(d) {
+  if (d.keyCode == 27 && $('.dropdown-form').hasClass('active')) {
+    $('.dropdown-form').removeClass('active');
+    $('.enroll-link').removeClass('active');
+  }
+});
+
+$(function() {
+	$(document).mouseup(function (e){ 
+		var div = $('.dropdown-form');
+		if (!div.is(e.target) && div.has(e.target).length === 0 && $('#ui-datepicker-div').has(e.target).length === 0) {
+			div.removeClass("active");
+			$('.enroll-link').removeClass('active');
+		}
+	});
+});
