@@ -136,7 +136,7 @@
 						<div class="input-block clearfix">
 							<div class="left-block">
 								<label>Ваш телефон</label>
-								<input type="text" placeholder="8(123)456-78-90">
+								<input type="text" placeholder="8(123)456-78-90" class="tel-mask">
 							</div>
 							<div class="right-block">
 								<label>Желаемый день</label>
@@ -201,25 +201,25 @@
 							<div class="skins-img">
 								<div class="prev clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="prev-text">до</div>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="after clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="after-text">после</div>
@@ -235,25 +235,25 @@
 							<div class="skins-img">
 								<div class="prev clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="prev-text">до</div>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="after clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="after-text">после</div>
@@ -269,25 +269,25 @@
 							<div class="skins-img">
 								<div class="prev clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="prev-text">до</div>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="after clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="after-text">после</div>
@@ -303,25 +303,25 @@
 							<div class="skins-img">
 								<div class="prev clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="prev-text">до</div>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="after clearfix">
 									<div class="left-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/1_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 									</div>
 									<div class="right-block">
-										<a href="#">
+										<a class="fancybox" rel="gallery1" href="images/2_b.jpg">
 											<img src="http://placehold.it/230x230" alt="">
 										</a>
 										<div class="after-text">после</div>
@@ -470,6 +470,21 @@
 
 
 	 <script src="js/vendor.min.js"></script>
+	 <script>
+	 	$(document).ready(function() {
+      $(".fancybox").fancybox({
+        padding : 0,
+        openEffect	: 'elastic',
+    		closeEffect	: 'elastic',
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}
+			});
+
+    });
+	 </script>
 	 <script src="js/script.js"></script>
 </body>
 </html>

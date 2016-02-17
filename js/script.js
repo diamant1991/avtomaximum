@@ -6,6 +6,19 @@ $('input,textarea').blur(function(){
   $(this).attr('placeholder',$(this).data('placeholder'));
 });
 
+function testJump(x){
+  var ml = ~~x.getAttribute('maxlength');
+  if(ml && x.value.length >= ml){
+      do{
+          x = x.nextSibling;
+      }
+      while(x && !(/text/.test(x.type)));
+      if(x && /text/.test(x.type)){
+          x.focus();
+      }
+  }
+}
+
 $('.enroll-link').click(function(e) {
 	e.preventDefault();
 	var form = $('.dropdown-form');
@@ -57,4 +70,9 @@ $('.close-modal-btn').click(function(e) {
 		$('.modal').fadeOut(200);
 		$('.modal').removeClass('open')
 	}
+});
+
+jQuery(function($){
+  $(".tel-mask").mask("+8 (999) 999-9999");
+  $(".large__input").mask("999-99-99");
 });
