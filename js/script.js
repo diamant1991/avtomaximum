@@ -72,9 +72,9 @@ $('.close-modal-btn').click(function(e) {
 	}
 });
 
-jQuery(function($){
-  $(".tel-mask").mask("+8 (999) 999-9999");
-  $(".large__input").mask("999-99-99");
+$(document).ready(function(){
+  $('.tel-mask').inputmask("+8 (999) 999-9999");
+  $(".large__input").inputmask("999-99-99");
 });
 
 $(document).keyup(function(d) {
