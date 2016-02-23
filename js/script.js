@@ -40,6 +40,7 @@ $(window).scroll(function () {
 });
 
 $("#hiddenField2").datepicker({
+	minDate: 0,
   showOn: "button",
   buttonText: "",
   dateFormat: 'd / MM / y'
@@ -73,7 +74,7 @@ $('.close-modal-btn').click(function(e) {
 });
 
 $(document).ready(function(){
-  $('.tel-mask').inputmask("+8 (999) 999-9999");
+  $('.tel-mask').inputmask("8 (999) 999-9999");
   $(".large__input").inputmask("999-99-99");
 });
 
